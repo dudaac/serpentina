@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serpentina</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- TELA INICIAL -->
+    <div id="inicio" class="tela">
+        <div class="conteudo-inicio">
+            <h1>SERPENTINA</h1>
+            <p>Coma, cresça e evolua!</p>
+            <button onclick="mostrarEscolha()">JOGAR</button>
+        </div>
+    </div>
+
+    <!-- ESCOLHA DA MINHOCA -->
+    <div id="escolha" class="tela escondido">
+        <h1>ESCOLHA SUA MINHOCA</h1>
+
+        <div class="opcoes">
+            <button class="minhoca azul"
+                onclick="selecionarMinhoca('azul')">
+                <br>Minhoca Azul
+            </button>
+
+            <button class="minhoca laranja"
+                onclick="selecionarMinhoca('laranja')">
+                <br>Minhoca Laranja
+            </button>
+
+            <button class="minhoca roxa"
+                onclick="selecionarMinhoca('roxa')">
+                <br>Minhoca Roxa
+            </button>
+        </div>
+
+        <p id="selecionada">Escolha uma minhoca!</p>
+
+        <button onclick="mostrarNiveis()">CONTINUAR</button>
+        <button onclick="voltarInicio()">VOLTAR</button>
+    </div>
