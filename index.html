@@ -43,3 +43,50 @@
         <button onclick="mostrarNiveis()">CONTINUAR</button>
         <button onclick="voltarInicio()">VOLTAR</button>
     </div>
+    <!-- ESCOLHA DO NÍVEL -->
+    <div id="niveis" class="tela escondido">
+        <h1>ESCOLHA O NÍVEL</h1>
+
+        <div class="opcoes">
+            <button class="nivel" onclick="selecionarNivel(1)">
+                NÍVEL 1<br>FÁCIL
+            </button>
+
+            <button class="nivel" onclick="selecionarNivel(2)">
+                NÍVEL 2<br>MÉDIO
+            </button>
+
+            <button class="nivel" onclick="selecionarNivel(3)">
+                NÍVEL 3<br>DIFÍCIL
+            </button>
+        </div>
+
+        <p id="nivelSelecionado">Escolha uma dificuldade!</p>
+
+        <button onclick="iniciarJogo()">PLAY</button>
+        <button onclick="voltarEscolha()">VOLTAR</button>
+    </div>
+
+    <!-- TELA DO JOGO -->
+    <div id="jogo" class="tela escondido">
+        <h1>SERPENTINA</h1>
+
+        <div class="informacoes">
+            <p>🥕 Cenouras: <span id="cenouras">0</span>/10</p>
+            <p>🍔 Largura: <span id="largura">14</span>/40</p>
+            <p>Nível: <span id="nivelAtual">1</span></p>
+        </div>
+
+        <canvas id="tela" width="600" height="400"></canvas>
+
+        <p id="mensagem"></p>
+
+        <button onclick="reiniciarJogo()">REINICIAR</button>
+        <button onclick="voltarInicio()">MENU</button>
+
+        <p>Use as setas do teclado para movimentar.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
