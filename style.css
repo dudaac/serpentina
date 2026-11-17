@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2d0b53;
+    font-family: Arial, sans-serif;
+    color: #eb168b;
+    text-align: center;
+}
+
+.tela {
+    padding: 40px 15px;
+    margin-top: 70px;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #eb168b;
+}
+
+p {
+    margin: 15px;
+    font-size: 18px;
+} 
