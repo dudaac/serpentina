@@ -22,19 +22,14 @@
         <h1>ESCOLHA SUA MINHOCA</h1>
 
         <div class="opcoes">
-            <button class="minhoca azul"
-                onclick="selecionarMinhoca('azul')">
-                <br>Minhoca Azul
+            <button class="minhoca azul" onclick="selecionarMinhoca('azul')">
+                Minhoca Azul
             </button>
-
-            <button class="minhoca laranja"
-                onclick="selecionarMinhoca('laranja')">
-                <br>Minhoca Laranja
+            <button class="minhoca laranja" onclick="selecionarMinhoca('laranja')">
+                Minhoca Laranja
             </button>
-
-            <button class="minhoca roxa"
-                onclick="selecionarMinhoca('roxa')">
-                <br>Minhoca Roxa
+            <button class="minhoca roxa" onclick="selecionarMinhoca('roxa')">
+                Minhoca Roxa
             </button>
         </div>
 
@@ -43,22 +38,15 @@
         <button onclick="mostrarNiveis()">CONTINUAR</button>
         <button onclick="voltarInicio()">VOLTAR</button>
     </div>
+
     <!-- ESCOLHA DO NÍVEL -->
     <div id="niveis" class="tela escondido">
         <h1>ESCOLHA O NÍVEL</h1>
 
         <div class="opcoes">
-            <button class="nivel" onclick="selecionarNivel(1)">
-                NÍVEL 1<br>FÁCIL
-            </button>
-
-            <button class="nivel" onclick="selecionarNivel(2)">
-                NÍVEL 2<br>MÉDIO
-            </button>
-
-            <button class="nivel" onclick="selecionarNivel(3)">
-                NÍVEL 3<br>DIFÍCIL
-            </button>
+            <button class="nivel" onclick="selecionarNivel(1)">NÍVEL 1<br>FÁCIL</button>
+            <button class="nivel" onclick="selecionarNivel(2)">NÍVEL 2<br>MÉDIO</button>
+            <button class="nivel" onclick="selecionarNivel(3)">NÍVEL 3<br>DIFÍCIL</button>
         </div>
 
         <p id="nivelSelecionado">Escolha uma dificuldade!</p>
@@ -77,12 +65,20 @@
             <p>Nível: <span id="nivelAtual">1</span></p>
         </div>
 
-        <canvas id="tela" width="600" height="400"></canvas>
+        <div class="tabuleiro">
+            <canvas id="tela" width="600" height="400"></canvas>
+            <canvas id="confetes" width="600" height="400"></canvas>
+            <div id="celebracao" class="escondido">
+                <h2>VITÓRIA!</h2>
+                <p id="mensagem"></p>
+                <span>Parabéns, você completou o desafio!</span>
+            </div>
+        </div>
 
-        <p id="mensagem"></p>
-
-        <button onclick="reiniciarJogo()">REINICIAR</button>
-        <button onclick="voltarInicio()">MENU</button>
+        <div style="margin-top: 15px;">
+            <button onclick="reiniciarJogo()">REINICIAR</button>
+            <button onclick="voltarInicio()">MENU</button>
+        </div>
 
         <p>Use as setas do teclado para movimentar.</p>
     </div>
